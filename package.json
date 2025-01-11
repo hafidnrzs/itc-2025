@@ -1,14 +1,17 @@
 {
-  "name": "itc-2025",
-  "private": true,
-  "version": "0.0.0",
+  "name": "",
   "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "devDependencies": {
-    "vite": "^6.0.5"
+  "dependencies": {
+    "@astrojs/alpinejs": "^0.4.1",
+    "@types/alpinejs": "^3.13.11",
+    "alpinejs": "^3.14.8",
+    "astro": "^5.1.5"
   }
 }
