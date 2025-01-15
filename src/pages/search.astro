@@ -1,0 +1,64 @@
+---
+import "../styles/global.css";
+import Layout from "../layouts/Alpine.astro";
+---
+
+<Layout title="Djasa | Search">
+  <!-- Navbar start -->
+  <nav
+    class="bg-indigo-800 text-white font-semibold p-4 flex justify-center md-justify-between align-middle"
+  >
+    <span class="hidden">Djasa</span>
+    <!-- Search bar start -->
+    <div>
+      <div
+        class="flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 outline-gray-300 has-[input:focus-within]:outline has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-indigo-600"
+      >
+        <input
+          type="text"
+          name="search"
+          id="search"
+          class="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6"
+          placeholder="Cari jasa..."
+        />
+      </div>
+    </div>
+    <!-- Search bar end -->
+    <!-- Navigation menu start -->
+    <div class="md-flex gap-2 hidden">
+      <span>Home</span>
+      <span>About</span>
+      <span>Contact</span>
+    </div>
+    <!-- Navigation menu end -->
+  </nav>
+  <!-- Navbar end -->
+  <!-- Category filter start -->
+  <div class="flex bg-[#fbfafd] p-4 gap-2 snap-x overflow-x-auto">
+    <!-- Category 1 start -->
+    <div
+      class="bg-white p-4 drop-shadow-md rounded-lg min-w-max cursor-pointer hover:bg-gray-100"
+    >
+      <span class="font-bold text-[#424f82]">Bengkel</span><br />
+      <span class="text-sm">Terdekat lokasi Anda</span>
+    </div>
+    <!-- Category 1 end -->
+    <!-- Category 2 start -->
+    <div
+      class="bg-white p-4 drop-shadow-md rounded-lg min-w-max cursor-pointer hover:bg-gray-100"
+    >
+      <span class="font-bold text-[#424f82]">Service</span><br />
+      <span class="text-sm">Terdekat lokasi Anda</span>
+    </div>
+    <!-- Category 2 end -->
+    <!-- Category 3 start -->
+    <div
+      class="bg-white p-4 drop-shadow-md rounded-lg min-w-max cursor-pointer hover:bg-gray-100"
+    >
+      <span class="font-bold text-[#424f82]">Warung Makan</span><br />
+      <span class="text-sm">Terdekat lokasi Anda</span>
+    </div>
+    <!-- Category 3 end -->
+  </div>
+  <!-- Category filter end -->
+</Layout>
